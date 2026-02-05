@@ -1,79 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ibrah Portfolio</title>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body> 
-    
-                
-                <nav class="navbar">
-                    <a href="#" class="logo"><span>Busuulwa Ibrahim</span></a>          
-                    <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact </a></li>
-                    </ul>
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Busuulwa Ibrahim — Computer Science student, web developer and freelancer based in Kampala, Uganda. Portfolio and contact." />
+    <title>Busuulwa Ibrahim — Portfolio</title>
 
-        <div class="bars-animation">
-            <div class="bar" style="--i:6;"></div>
-            <div class="bar" style="--i:5;"></div>
-            <div class="bar" style="--i:4;"></div>
-            <div class="bar" style="--i:3;"></div>
-            <div class="bar" style="--i:2;"></div>
-            <div class="bar" style="--i:1;"></div>
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Fonts (optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Main navigation">
+        <a class="logo" href="#home"><span>Busuulwa Ibrahim</span></a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+          <i class='bx bx-menu'></i>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <ul id="primary-navigation" class="nav-list">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="bars-animation" aria-hidden="true">
+      <div class="bar" style="--i:6;"></div>
+      <div class="bar" style="--i:5;"></div>
+      <div class="bar" style="--i:4;"></div>
+      <div class="bar" style="--i:3;"></div>
+      <div class="bar" style="--i:2;"></div>
+      <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <main>
+      <section id="home" class="home">
+        <div class="home-info">
+          <h1>Hi, I’m <strong>Busuulwa Ibrahim</strong></h1>
+          <h2 class="roles">I’m a
+            <span class="role" data-text="Bachelor in Computer Science">Computer Science student</span>
+            <span class="role" data-text="Freelancer in Computer Programs">Freelancer</span>
+            <span class="role" data-text="Driver">Driver</span>
+          </h2>
+
+          <div class="bio">
+            <p>I’m a 24-year-old Computer Science student based in Kampala, Uganda (Bukesa / Nakulabye). I’m currently pursuing my Bachelor of Computer Science and building practical skills in software and web development.</p>
+
+            <p>My focus: learning modern web technologies, building reliable applications, and delivering value through freelance projects and collaborations. Skills include Python, JavaScript, Java, web development (frontend & backend), data analysis basics, and networking concepts.</p>
+
+            <p>I’m open to internships, freelance work, and mentorship opportunities. Let’s connect!</p>
+          </div>
+
+          <div class="btn-sci">
+            <a class="btn" href="tel:+256785211586" aria-label="Call Ibrahim">Call: +256 785 211 586</a>
+
+            <div class="sci" aria-hidden="false">
+              <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+              <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            </div>
+          </div>
         </div>
-        <section class="home">
-            <div class="home-info">
-                <h1><span>My Portfolio</span></h1>
-                <h2>Im  a
-                <span style="--i:3;" data-text="Bachelor in Computer Science">Bachelor in Computer Science</span>
-                <span style="--i:2;" data-text="Freelancer in Computer Programs" >Freelancer in Computer Programs</span>
-                <span style="--i:1;" data-text="Driver">Driver</span>
-            </h2>
-                 <p>I am a 24-year-old passionate Computer Science student currently based in Kampala, Uganda — specifically in Bukesa, Nakulabye, Kiyindi. As a proud holder of both Ordinary Level and Advanced Level certificates from Makerere College School, I’ve built a strong academic foundation that fuels my drive to excel in the ever-evolving world of technology. <br></p>
-                 <p>I am currently pursuing my Bachelor’s degree in Computer Science, where I’m deepening my knowledge and refining my technical expertise. My journey is not just about earning a degree — it's about transformation: growing as a thinker, a problem-solver, and a future leader in tech.<br></p>
-                 <p>My personal goals are; My personal mission is to continuously evolve  both professionally and personally. I aim to: Master new technologies and programming languages  
-,Expand my skill set in software development, data analysis, and web engineering  
-,Increase my income through meaningful work and side projects  
-,Invest time in family and self-care, maintaining balance in a fast-paced world , I believe that growth happens at the intersection of learning, practice, and purpose — and I’m committed to walking that path every day.
-                 <p> I have technical skills in With hands-on experience and a curious mindset, I bring solid proficiency in:
-Software Development– Building scalable, efficient applications  
-, Programming Languages– Including Python, JavaScript, Java, and others  
-, Web Development – Frontend and backend frameworks, responsive design  
-, Data Analysis– Extracting insights from raw data using tools like Excel, SQL, and Python libraries  
-, Networking Concepts– Understanding systems, protocols, and infrastructure  
 
-, Networking – Connecting with professionals and peers to exchange ideas  
-, Research – Exploring innovations, solving complex problems, and staying ahead  
-, Football – A sport that teaches teamwork, discipline, and resilience — values I carry into my work
-,<br></p>
-                
-                 <p>I’m open to internships, freelance opportunities, collaborations, and mentorship. If you’re looking for someone driven, adaptable, and ready to grow — let’s talk!</p>
-                <div class="btn-sci">
-                    <a href="#" class="btn">0785211586</a>
-                    <div class="sci">
-                        <a href="#"><i class='bx bxl-twitter'></i></a>
-                        <a href="#"><i class='bx bxl-github' ></i></a>
-
-                    </div>
-                </div>
+        <aside class="home-img" aria-hidden="false">
+          <div class="img-box">
+            <div class="img-item">
+              <img src="myphoto.png" alt="Portrait of Busuulwa Ibrahim">
             </div>
-            <div class="home-img">
-                <div class="img-box">
-                    <div class="img-item">
-                    <img src="myphoto.png">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </body>
+          </div>
+        </aside>
+      </section>
 
+      <section id="about" class="section">
+        <h3>About</h3>
+        <p>Concise about section. Expand with education, notable projects, and technologies. Example: Makerere College School (O & A level), currently studying BSc Computer Science.</p>
+      </section>
+
+      <section id="portfolio" class="section">
+        <h3>Portfolio</h3>
+        <p>Add project cards here with links to live demos and source code (GitHub).</p>
+      </section>
+
+      <section id="services" class="section">
+        <h3>Services</h3>
+        <ul>
+          <li>Web development (frontend & backend)</li>
+          <li>Small automation scripts and tooling</li>
+          <li>Data cleaning & basic analysis</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>Phone: <a href="tel:+256785211586">+256 785 211 586</a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Busuulwa Ibrahim — Built with care.</p>
+    </footer>
+
+    <script>
+      // Small script: set year and toggle nav (keeps page lightweight)
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('primary-navigation');
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+        toggle.setAttribute('aria-expanded', !expanded);
+        nav.classList.toggle('open');
+      });
+    </script>
+  </body>
 </html>
-
